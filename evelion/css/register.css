@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+}
+
+.login_container {
+    width: 330px;
+    display: flex;
+    padding: 20px;  
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+
+.login_container h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.login_container input {
+    padding: 14px 18px;
+    margin: 5px 0px;
+    font-size: 14px;
+    border: 1px solid #dddfe2;
+    outline: none;
+    font-size: 17px;
+    border-radius: 6px;
+}
+
+.login_container hr {
+    margin: 10px 0px;
+}
+
+.login_container button {
+    background-color: #1877f2;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.login_container button:active {
+    background-color: #4267b2;
+}
+
+
+.register_container  {
+    width: 330px;
+    display: flex;
+    padding: 20px;  
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+
+.register_container input {
+    padding: 14px 18px;
+    margin: 5px 0px;
+    font-size: 14px;
+    border: 1px solid #dddfe2;
+    outline: none;
+    font-size: 17px;
+    border-radius: 6px;
+}
+
+.register_container hr {
+    margin: 10px 0px;
+}
+
+#register {
+    margin-top: 10px;
+    background-color: #42b72a;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+#register:active {
+    background-color: #2d9419;
+}
+
+#register:disabled, #auth:disabled {
+    background-color: #d3e0f0;
+    cursor: not-allowed;
+}
+
+#auth:active  {
+    background-color: #4267b2;
+}
+
+/* errors */
+
+
+.error {
+    font-size: 15px;
+    color: red;
+    font-weight: 500;
+    position: absolute;
+    width: 40%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    top: 200px;
+    left: 30%;
+    box-shadow: 0px 0px 15px -8px black;
+    border-radius: 15px;
+}
+
+.active {
+    display: flex;
+}
+
+.error span {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 20px 0px;
+}
+
+.error span h3 {
+    font-weight: 600;
+    display: inline;
+}
+
+.error span p {
+    font-weight: 400;
+    display: inline;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.error button {
+    padding: 10px 25px;
+    background-color: #42b72a;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.added {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 0px 15px -10px black;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 15px;
+  color: green;
+  display: flex;
+  align-items: center;
+  top: -70px;
+  left: 45%;
+  transition: all 0.6s ease-in-out;
+}
+
+
+.added i {
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* loading... */
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    padding: 100px;
+}
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #000;
+    margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+@keyframes lds-roller {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 60px;
+    background-color: #2f2e30;
+}
+
+footer h2 {
+    font-weight: 400;
+    color: white;
+}

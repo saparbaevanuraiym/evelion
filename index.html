@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evelion</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+  
+  <div class="alertBasket">
+    <p>Товар добавлен в корзину</p>
+    <i class="fa-solid fa-circle-check"></i>
+  </div>
+  
+  <header>
+
+    <div class="upper-nav">
+      <div>
+        <small><a href="#">Kg</a></small>
+        <small><a href="#"><i class="fa-solid fa-location-dot"></i> Ош</a></small>
+        <small><a href="#">Бесплатная доставка</a></small>
+      </div>
+      <h1 class="username"></h1>
+    </div>
+
+    <nav>
+      <div class="left_nav">
+        <h2><a href="index.html">Eve<span>lion</span></a></h2>
+        <ol>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ol>
+      </div>
+      <div class="right_nav">
+        <button class="signup"><a href="./auth.html">Sign up</a></button>
+      </div>
+      <div class="burgerMenu">
+        <i class="fa-solid fa-bars burger"></i>
+        <ul class="burger_container">
+          <ul><i class="fa-solid fa-xmark"></i></ul>
+          <li><a href="#">Kg</a></li>
+          <li><a href="#"><i class="fa-solid fa-location-dot"></i> Ош</a></li>
+          <li><a href="#">Бесплатная доставка</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><button class="signup"><a href="./auth.html">Sign up</a></button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="left_banner">
+        <div>
+          <h1>Start Selling <br> on a Website</h1>
+          <p>We're putting free trials on trial. With Ecwid, you get free FOREVER. Set up your free account once, and keep it as long as you like. Seriously.</p>
+          <a href="auth.html"><button class="login">Get started for free</button></a>
+        </div>
+      </div>
+
+      <div class="right_banner">
+        <div class="ipad_frame">
+          <img src="img/ipad_frame.png" alt="">
+          <img src="img/ipad.png" alt="">
+        </div>
+        
+        <div class="iphone_frame">
+          <img src="img/iphone_frame.png" alt="">
+          <img src="img/iphone.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="goods-inner">
+      <h1>Evelion</h1>
+      <input type="text" placeholder="Search...">
+      <button id="addGoods"><a href="./addNewGood.html">Добавить товар</a></button>
+      <select id="select">
+        <option value="1">Кроссовки</option>
+        <option value="2">Тапочки/option>
+        <option value="3">Туфли</option>
+      </select>
+    </div>
+
+    <div class="goods-container">
+      
+    </div>
+
+    <hr>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/block1.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/block2.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/block3.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/block4.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/block5.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/block6.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/block9.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/block10.jpeg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </main>
+
+
+  <footer>
+
+    <h2>All rights reserved ©</h2>
+
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/21dce5e5c6.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+  </script>
+  <script async src="js/index.js"></script>
+</body>
+</html>

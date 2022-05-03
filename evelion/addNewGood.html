@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evelion</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/addNewGood.css">
+</head>
+<body>
+  <div class="add_container">
+    <form>
+      <div class="added"><h1>added</h1><i class="fa-solid fa-circle-check"></i></div>
+      <div class="error"></div>
+      <div class="goods_inputs">
+        <label>
+          <p>Title</p>
+          <input type="text" class="inputTitle inputs" placeholder="Title">
+        </label>
+        <label>
+          <p>Description</p>
+          <textarea placeholder="Description" class="inputDescrip inputs"></textarea>
+        </label>
+        <label>
+          <p>Price</p>
+          <input type="text" class="inputPrice inputs" placeholder="Price">
+        </label>
+        <label>
+          <p>Image URL</p>
+          <input type="text" class="inputImgURL inputs" placeholder="Image URL">
+        </label>
+      </div>
+      <p>Категория товара</p>
+      <div class="category_container">
+        <label>
+          <input type="radio" name="category" class="category" value="1">Кроссовки
+        </label>
+        <label>
+          <input type="radio" name="category" class="category" value="2">Тапочки
+        </label>
+        <label>
+          <input type="radio" name="category" class="category" value="3">Туфли
+        </label>
+      </div>
+      <button id="add">Post</button>
+    </form>
+  </div>
+  <script src="https://kit.fontawesome.com/21dce5e5c6.js" crossorigin="anonymous"></script>
+  <script src="js/addNewGood.js"></script>
+</body>
+</html>
